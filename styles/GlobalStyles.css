@@ -1,15 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
 
-body{
+:root{
+  --font-collor: #fff;
+  --background-color: rgb(0,75,215);
+}
+
+*{
   margin: 0;
+  padding: 0;
+}
+
+body{
   font-family: "Gochi Hand", cursive;
-  /* background-image: url("../assets/background.png");
-  background-repeat: no-repeat;
-  background-size: 100vw 100vh; */
-  background-color: rgb(0,75,215)
+  font-weight: 0;
+  background-color: var(--background-color);
 }
 
 main{
-  display: flex;
-  flex-direction: row
+  height: 78vh;
+
+  
 }

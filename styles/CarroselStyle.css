@@ -1,6 +1,21 @@
-
-.lista-provas{
+.lista-provas {
   display: flex;
-  justify-content: center;
-  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20vh;
+
 }
+
+.provas {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.prova {
+  background-color: lightblue; 
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 20vh 0 20vh 0;
+}
+

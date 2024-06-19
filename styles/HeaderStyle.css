@@ -1,3 +1,6 @@
+header{
+  height: 15vh;
+}
 header, .logo, .logo-imagem{
   display: flex;
   justify-content: center;
@@ -5,6 +8,6 @@ header, .logo, .logo-imagem{
 
 .logo-imagem{
   width: auto;
-  height: 28vh;
+  height: 20vh;
   
 }
