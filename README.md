@@ -1,10 +1,7 @@
-# gincana-da-integracao-morski
+# GINCANA DA INTEGRAÇÃO
+Projeto desenvolvido para acompanhamento da gincana da integração do colégio Morski de Pinhão-PR
 
-/gincana
-  /images
-    - imagem1.jpg
-    - imagem2.jpg
-    - imagem3.jpg
-  - index.html
-  - styles.css
-  - script.js
+## VISITAÇÃO DO SITE 
+
+[GINCANA DA INTEGRAÇÃO](https://desenvolvimentodesistemas3s.github.io/gincana-da-integracao-morski/)
+
