@@ -1,21 +1,31 @@
 .lista-provas {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  margin-top: 20vh;
+  margin: 20vh 0 15vh 0;
 
 }
 
 .provas {
   display: flex;
-  justify-content: space-between;
-  flex-grow: 1;
+  
 }
 
-.prova {
+.botao-voltar-texto, .botao-avancar-texto{
+  background-color: transparent;
+  border: 0px;
+  color: var(--font-collor);
+}
+
+.provas > div {
   background-color: lightblue; 
   border: 1px solid #ccc;
   text-align: center;
   padding: 20vh 0 20vh 0;
+  margin: 0 2vw 0 2vw;
+  transition: padding .7s;
 }
 
+.provas > div.clicked {
+   padding: 0 5vw;
+}

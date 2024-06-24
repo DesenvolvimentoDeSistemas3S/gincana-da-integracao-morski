@@ -1,25 +1,19 @@
-let currentIndex = 0;
+// Seleciona todos os elementos div dentro de .provas
+document.addEventListener('DOMContentLoaded', function() {
+  // Seleciona todos os elementos div dentro de .provas
+  const divs = document.querySelectorAll('.provas > div');
 
-function showSlide(index) {
-    const slides = document.querySelector('.slides');
-    const totalSlides = slides.children.length;
-    if (index >= totalSlides) {
-        currentIndex = 0;
-    } else if (index < 0) {
-        currentIndex = totalSlides - 1;
-    } else {
-        currentIndex = index;
-    }
-    const offset = -currentIndex * 100;
-    slides.style.transform = `translateX(${offset}%)`;
-}
-
-document.querySelector('.next').addEventListener('click', () => {
-    showSlide(currentIndex + 1);
+  // Adiciona um listener de clique a cada elemento div
+  divs.forEach(div => {
+    div.addEventListener('click', () => {
+      div.classList.toggle('clicked');
+    });
+  });
 });
 
-document.querySelector('.prev').addEventListener('click', () => {
-    showSlide(currentIndex - 1);
-});
 
-showSlide(currentIndex);
+// function expandProva(prova) {
+//   // O parâmetro prova irá receber a localidade da prova que será expandida
+//   // Exemplo: expandProva(document.getElementByClass("prova0"))
+  
+// }
