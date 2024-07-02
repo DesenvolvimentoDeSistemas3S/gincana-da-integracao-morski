@@ -1,19 +1,31 @@
-// Seleciona todos os elementos div dentro de .provas
 document.addEventListener('DOMContentLoaded', function() {
-  // Seleciona todos os elementos div dentro de .provas
-  const divs = document.querySelectorAll('.provas > div');
+    const divs = document.querySelectorAll('.provas > div');
 
-  // Adiciona um listener de clique a cada elemento div
-  divs.forEach(div => {
-    div.addEventListener('click', () => {
-      div.classList.toggle('clicked');
+    divs.forEach(div => {
+        div.addEventListener('click', () => {
+            // Recolhe todas as provas antes de expandir a clicada
+            divs.forEach(otherDiv => {
+                if (otherDiv !== div && otherDiv.classList.contains('clicked')) {
+                    otherDiv.classList.remove('clicked');
+                }
+            });
+
+            // Alterna a classe clicked na div clicada
+            div.classList.toggle('clicked');
+        });
+
+        div.addEventListener('mouseover', () => {
+            // Recolhe todas as provas antes de expandir a que está sendo hover
+            divs.forEach(otherDiv => {
+                if (otherDiv !== div && otherDiv.classList.contains('clicked')) {
+                    otherDiv.classList.remove('clicked');
+                }
+            });
+
+            // Expande a prova apenas quando estiver em hover, se não estiver clicada
+            if (!div.classList.contains('clicked')) {
+                div.classList.add('clicked');
+            }
+        });
     });
-  });
 });
-
-
-// function expandProva(prova) {
-//   // O parâmetro prova irá receber a localidade da prova que será expandida
-//   // Exemplo: expandProva(document.getElementByClass("prova0"))
-  
-// }

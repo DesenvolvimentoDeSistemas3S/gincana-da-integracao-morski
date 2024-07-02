@@ -3,22 +3,21 @@
   justify-content: center;
   align-items: center;
   margin: 20vh 0 15vh 0;
-
 }
 
 .provas {
   display: flex;
-  
 }
 
-.botao-voltar-texto, .botao-avancar-texto{
+.botao-voltar-texto,
+.botao-avancar-texto {
   background-color: transparent;
   border: 0px;
   color: var(--font-collor);
 }
 
 .provas > div {
-  background-color: lightblue; 
+  background-color: lightblue;
   border: 1px solid #ccc;
   text-align: center;
   padding: 20vh 0 20vh 0;
@@ -26,6 +25,7 @@
   transition: padding .7s;
 }
 
-.provas > div.clicked {
-   padding: 0 5vw;
+.provas > div.clicked,
+.provas > div:hover {
+  padding: 0 5vw;
 }
